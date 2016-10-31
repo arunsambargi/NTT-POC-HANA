@@ -1,0 +1,20 @@
+service {
+
+"NTT"."WORKORDER"              as "WorkOrder";
+
+"NTT"."NOTIFICATIONHEADER"     as "NotificationHeader"   
+navigates ("Item" as "Item", "AttachmentsHeader" as "Attachment", "Orders"  as "Order");
+
+"NTT"."NOTIFICATIONITEM"       as "NotificationItem"
+navigates ("AttachmentsItem" as "Attachment");
+
+"NTT"."NOTIFICATIONATTACHMENT" as "NotificationAttachment"; 
+
+association "Item"              with referential constraint principal "NotificationHeader"("QMNUM")       multiplicity "1" dependent "NotificationItem"("QMNUM")               multiplicity "*";
+
+association "AttachmentsHeader" with referential constraint principal "NotificationHeader"("QMNUM")       multiplicity "1" dependent "NotificationAttachment"("QMNUM")         multiplicity "*";
+
+association "AttachmentsItem"   with referential constraint principal "NotificationItem"("QMNUM","FENUM") multiplicity "1" dependent "NotificationAttachment"("QMNUM","FENUM") multiplicity "*";
+
+association "Orders"            with referential constraint principal "NotificationHeader"("QMNUM")       multiplicity "1" dependent "WorkOrder"("QMNUM")                      multiplicity "*";
+}

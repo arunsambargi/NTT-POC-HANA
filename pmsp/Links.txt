@@ -1,0 +1,14 @@
+https://pocp155222trial.hanatrial.ondemand.com/ntt/pmsp/pmsp.xsodata/$metadata
+
+Notification List
+https://pocp155222trial.hanatrial.ondemand.com/ntt/pmsp/pmsp.xsodata/NotificationHeader
+
+Reference when creating SAP UI5 Application
+
+https://pocp155222trial.hanatrial.ondemand.com/ntt/pmsp/pmsp.xsodata/NotificationHeader('QM0436512716')
+
+https://pocp155222trial.hanatrial.ondemand.com/ntt/pmsp/pmsp.xsodata/NotificationHeader('QM0436512716')/Item
+
+https://pocp155222trial.hanatrial.ondemand.com/ntt/pmsp/pmsp.xsodata/NotificationHeader('QM0436512716')/Attachment
+
+https://pocp155222trial.hanatrial.ondemand.com/ntt/pmsp/pmsp.xsodata/NotificationHeader('QM0436512716')/Order
