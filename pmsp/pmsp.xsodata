@@ -1,6 +1,16 @@
 service {
 
+"NTT"."CUSTOMERS"              as "MDCustomers";
+"NTT"."NOTIFICATIONTYPES"      as "MDNotifTypes";
+"NTT"."ORDERTYPES"             as "MDOrderTypes";
+"NTT"."ISSUEPRIORITY"          as "MDPriority";
+"NTT"."ISSUESTATUS"            as "MDStatus";
+"NTT"."PLANTS"                 as "MDPlants";
+"NTT"."USERS"                  as "MDUsers";
+"NTT"."MATERIALS"              as "MDMaterials";
+
 "NTT"."WORKORDER"              as "WorkOrder";
+
 
 "NTT"."NOTIFICATIONHEADER"     as "NotificationHeader"   
 navigates ("Item" as "Item", "AttachmentsHeader" as "Attachment", "Orders"  as "Order");

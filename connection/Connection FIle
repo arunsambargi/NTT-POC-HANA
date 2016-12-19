@@ -1,0 +1,13 @@
+#Password=<< Existing password/certificate removed on export >>
+#
+#Fri Dec 16 14:55:01 UTC 2016
+Type=HTTP
+Authentication=BasicAuthentication
+WebIDEUsage=odata_abap,ui5_execute_abap,dev_abap,dev_gen,bsp_execute_abap,odata_xs,odata_gen
+Name=POC
+WebIDEEnabled=true
+CloudConnectorVersion=2
+URL=https\://pocp155222trial.hanatrial.ondemand.com
+ProxyType=Internet
+User=SYSTEM
+WebIDESystem=HCP
